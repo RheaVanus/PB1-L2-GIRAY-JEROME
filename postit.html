@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post-ers</title>
+    <link rel="stylesheet" href="postit.css">
+</head>
+<body>
+    <main class="card">
+        <section id="boxName" class="cards">
+            <h2>What's your name?</h2>
+            <p class="hint">One time enter only</p>
+            <div class="inputs">
+                <input type="text" id="names" placeholder="Enter your name">
+                <button id="signBtn">Continue</button>
+            </div>
+        </section>
+        <section id="boxPost" class="cards" hidden>
+            <h2>Hii <span id="uName"></span></h2>
+            <input type="text" id="captioning" placeholder="Write something artistic....">
+            <div class="inputs end">
+                <button id="postBtn">Post</button>
+            </div>
+        </section>
+        <section id="thread"></section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+    <script src="postit.js"></script>
+</body>
+</html>
